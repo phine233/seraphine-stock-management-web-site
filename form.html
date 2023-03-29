@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+CSS Code:
+
+css
+Copy code
+form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+a{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+a:hover{
+  color: blue;
+  text-decoration: none;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+   .sign{
+            position: absolute;
+            bottom: 2px;
+            right: 10px;
+            border-style: solid;
+            border-radius: 4px;
+            background-color: blueviolet;
+            border-color:darkviolet;
+            
+
+        }
+</style>
+  </head>
+  <body style="background-color: springgreen;width: 100%;height: 10%;position: absolute;">
+      <form>
+      <h2>Contact Us</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Write your message here.." required></textarea><br><br>
+
+       <div class="sign"> <a href="about us.html">login</a></div>
+    </form>
+  </body>
+</html>
+
+

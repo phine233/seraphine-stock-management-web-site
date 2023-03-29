@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login form</title>
+  </head>
+  <style>
+    body{
+  background-color: #F5F5F5;
+  font-family: Arial, sans-serif;
+}
+
+#login-form {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+h2 {
+  text-align: center;
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+#login-button {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#login-button:hover {
+  background-color: #3e8e41;
+}
+
+
+const form = document.getElementById("login-form");
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  // check if the username and password are correct
+  if (username.value === "admin" && password.value === "password") {
+    alert("You have successfully logged in.");
+  } else {
+    alert("Invalid username or password.");
+  }
+});
+</style>
+<body>
+<form id="login-form" action="cat of web design.html">
+  <h2>Login Form</h2>
+  <div class="input-field">
+    <input type="text" placeholder="Username" name="username" id="username" required>
+  </div>
+  <div class="input-field">
+    <input type="password" placeholder="Password" name="password" id="password" required>
+  </div>
+  <button type="submit" id="login-button">Login</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<title></title>
+<head>
+<style>
+    *{
+box-sizing:border-box;
+}
+#fname{
+text-align: center;
+}
+#telephone{
+    text-align: center;
+}
+.ul{
+list-style-type:none;
+margin:0px;
+padding:0px;
+background-color:violet;
+overflow:hidden;
+}
+.ul>li{
+float:left;
+}
+.ul>li a{
+display:block;
+text-decoration:none;
+padding:12px 15px;
+}
+</style>
+</head>
+<body>
+    <div style="background-color: Lavender; display:grid; border-radius: 100px; margin-right: 26%; text-align: center; float: right; padding-bottom: 20px; padding-top: 20px;">
+<h1 style="text-align: center;"><u>Your information and Address</u></h1>
+
+<div id="fname">first name:
+<input type="text"placeholder="enter your first name ex:Denyse" required="" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last name:
+<input type="text" placeholder="enter last name ex:Mucyo" required=""></div><br>
+<div id="telephone">telephone number:
+<input type="text" placeholder="+250xxxxxxxxx" required="">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:
+<input type="text" placeholder="Email" required=""></div></br>
+<div style="text-align: left; margin-left: 8%;">Password:<input type="Password"placeholder="Password" required="" style="text-align: left; margin-left: 8%;">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Password"placeholder="confirm" required="">
+</div><br>
+<div style="text-align:center;">&nbsp;&nbsp;&nbsp;&nbsp;father name:
+<input type="text" placeholder="enter your father name"required="">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;father phone number:
+<input type="text" placeholder="+250xxxxxxxxx" required="" style="float:right;"></div><br>
+ <div style="text-align:center;">&nbsp;&nbsp;&nbsp;&nbsp;mother name:
+<input type="text" placeholder="enter your mother name" required="">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mother phone number:
+<input type="text" placeholder="+250xxxxxxxxx" required=""></div><br>
+<div  style="text-align:center;">
+<label for="country">Choose a Country:</label>
+<select id="country" name="country">
+<option>Uganda</option>
+<option>Mozambique</option>
+<option>Zambia</option>
+<option>Rwanda</option>
+<option>Burundi</option>
+<option>South Sudan</option>
+<option>Italy</option>
+<option>Tchad</option>
+<option>Gabon</option>
+<option>Gambia</option>
+<option>malawi</option>
+<option>siel leon</option>
+<option>togo</option>
+<option>kenya</option>
+<option>canada</option>
+<option>usa</option>
+<option>france</option>
+<option>india</option>
+<option>Tanzania</option>
+<option>Mali</option>
+</select>
+<label for="district">Choose a district:</label>
+<select id="district" name="district">
+<option>Nyaruguru</option>
+<option>Musanze</option>
+<option>Gatsibo</option>
+<option>Rulindo</option>
+<option>Burera</option>
+<option>Gakenke</option>
+<option>Nyagatare</option>
+<option>Rutsiro</option>
+<option>Karongi</option>
+<option>Huye</option>
+<option>Nyarugenge</option>
+<option>Gasabo</option>
+<option>Kicukiro</option>
+<option>Rubavu</option>
+<option>Rusizi</option>
+<option>Nyamasheke</option>
+<option>Muhanga</option>
+<option>Gicumbi</option>
+<option>Nyabihu</option>
+<option>Ngororero</option>
+<option>Nyamagabe</option>
+<option>Rwamagana</option>
+<option>Kayonza</option>
+<option>Ngoma</option>
+<option>Kamonyi</option>
+<option>Gakenke</option>
+<option>Nyagatare</option>
+<option>Rutsiro</option>
+<option>Karongi</option>
+<option>Huye</option>
+</select></div><br>
+<div>
+<label for="sector">Choose a sector:</label>
+<select id="sector" name="sector">
+<option>Rwamiko</option>
+<option>kaniga</option>
+<option>Mukarange</option>
+<option>giti</option>
+<option>muko</option>
+<option>Bukure</option>
+<option>miyove</option>
+<option>byumba</option>
+<option>cyumba</option>
+<option>rubaya</option>
+<option>manyagiro</option>
+<option>rushaki</option>
+<option>nyankenke</option>
+<option>bwisige</option>
+<option>Nyamabuye</option>
+</select>
+<label for="cell">Choose a Cell:</label>
+<select id="cell" name="cell">
+<option>Nyaruka</option>
+<option>Muhambo</option>
+<option>Nyakabungo</option>
+<option>Rwankonjo</option>
+<option>Nyambare</option>
+<option>Burindi</option></select></div><br>
+<div>
+<label for="village">Choose a village:</label>
+<select id="village" name="village">
+<option>gatoki</option>
+<option>kabare</option>
+<option>burambira</option>
+<option>Remera</option>
+<option>ryaruhumba</option>
+<option>kigombe</option>
+</select >
+<label for="nationality">nationality:</label>
+<select id="nationality" name="nationality">
+    <option>Italian</option>
+      <option>American</option>
+        <option>Rwandan</option>
+          <option>Ugandan</option>
+            <option>Indian</option>
+        </select></div>
+        <div>
+<h2><u>Date,Time and Other Things</u></h2>
+</div>
+<div>
+<input type="file">
+<input type="date"required=""></div><br>
+<div>
+<input type="time">
+<input type="week"></div><br>
+<div>
+    <label for="color">Color:</label>
+<input type="color">
+<label for="gender">Gender:</label>
+<select>
+<option>male</option>
+<option>female</option>
+</select>
+<label for="martaul status">Martaul status:</label>
+<select>
+<option>married</option>
+<option>single</option>
+</select>
+<div>
+  <input type="submit" value="Submit">
+<input type="reset"></div><br>
+</div>
+</body>
+</html>
